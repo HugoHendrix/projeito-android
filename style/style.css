@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+ 
+    
+}
+
+:root {
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    --fonte-padrao: 'Arial', Verdana, Helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', cursive;
+    --font-android:'Press Start 2P', cursive;
+}
+
+
+body {
+    background-color: var(--cor0);
+    font-family:var(--fonte-padrao);
+
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family:var(--font-destaque);
+    font-size: 3em;
+    margin-bottom:20px;
+    text-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4); 
+}
+
+header > p  {
+        font-family: var(--fonte-padrao);
+        font-size: 1.2em;
+        color: white;
+        max-width: 600px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: auto;
+   
+}
+
+
+nav{
+  background-color:var(--cor5);
+  padding: 20px;
+  text-align:center;
+  box-shadow: 0px 7px 8px rgba(20,20,20,0.4); 
+
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: var(--cor1);
+    color:var(--cor5);
+    border-radius: 7px;
+    transition: 0.8s;
+}
+
+main {
+    margin: auto;
+    margin-bottom:30px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 25px;
+    background-color:white;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+    background-image: linear-gradient(to right, var(--cor0), transparent); 
+}
+
+main h2 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-size: 1em;
+    background-image: linear-gradient(to right, var(--cor0), transparent); 
+}
+
+main img {
+    width: 100%;
+}
+
+main img.bugdroid {
+    max-width: 300px ;
+    display: block;
+    margin:auto;
+}
+
+
+main p {
+    margin: 15px 0px;
+    text-align:justify;
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 1.5em
+    
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+    padding:1px 3px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding:2px 3px;
+    
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom:40%;
+    position: relative;
+    border-radius: 25px;
+}
+div.video >iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width:90%;
+    height: 90%;
+    border-radius: 25px;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color:white;
+    padding: 20px;
+    margin: -26px -26px -0px -26px;        /*   Valores negativos podem e devem ser usados  */
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';  /* Isso não é compatível com todos os navegadores  */
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor0);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2)
+}
+
+footer a:visited {
+    color: aqua;
+}
+
+a {
+    color: var(--cor0)
+}
+
+a.externo::after {
+    content: "\00A0\1F517"
+}
